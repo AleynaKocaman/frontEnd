@@ -1,0 +1,51 @@
+
+    <app-category></app-category>
+<div class="d-flex position-relative">
+    <table>
+      <tr>
+        <th>Gezilecek Yer</th>
+        <th>Seyahet Listesine Ekle</th>
+        <th>Açıklama</th>
+      </tr>
+      <tr *ngFor="let place of placesForCity" align="center">
+        <!-- <td>
+          <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+        </td> -->
+        
+        <td>
+          <label for="checkboxNoLabel" class="d-flex align-items-center">
+            <input class="form-check-input me-2" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+            <span id="text-to-strike">{{ place.name }}</span>
+          </label>
+        </td>
+
+        <!-- <td>{{ place.name }}</td> -->
+
+        <td class="d-flex justify-content-center align-items-center">
+          <i class="bi bi-bookmark"></i>
+        </td>
+
+
+        <td>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">Açıklama yazısı</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">{{ place.name }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                deneme yazısı
+              </div>
+            </div>
+        </td>
+
+
+      </tr>
+
+    </table>
+
+  </div>
+
+

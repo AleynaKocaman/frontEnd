@@ -1,0 +1,21 @@
+
+.category-container {
+    margin-top: 15px;
+    padding: 50px;
+     margin-left: 10%; 
+     margin-right: 10%;
+
+}
+.category-list{
+    display: flex;
+    list-style: none;
+    column-gap: 30PX;
+    text-align: center;
+    justify-content: center; 
+  
+}
+.category-item:hover{
+   cursor: pointer; 
+   font-weight: bold;
+}
+

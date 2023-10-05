@@ -1,0 +1,24 @@
+<div class="card" style="float: left; width: 18rem; margin-top: 20px; margin-left: 20px;" *ngFor="let city of cities">
+    <img class="card-img-top" src="...">
+    <div class="card-body">
+      <li class="btn btn-primary" 
+      (click)="getPlacesForCity(city.id)"
+      target="_blank"
+      routerLink="place/:cityId"
+      >
+      {{ city.name }}</li>
+    </div>
+  </div> 
+
+  
+<!-- 
+  <div  *ngFor="let city of cities">
+
+    <li 
+    >
+    {{ city.name }}</li>
+  </div> -->
+
+
+
+  

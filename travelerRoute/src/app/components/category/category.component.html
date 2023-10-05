@@ -1,0 +1,11 @@
+
+<div class="category-container">
+    <ul class="category-list" >
+        <li (click)="getPlacesForCategory(category.id)"
+         class="category-item" 
+         *ngFor="let category of categories"
+         routerLink="category/{{category.id}}"
+         >{{category.name}}</li> 
+    </ul>
+</div>
+

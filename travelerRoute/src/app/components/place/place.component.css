@@ -1,0 +1,15 @@
+th, td {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* Style the label so it looks like a normal text */
+label {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Apply strikethrough when the checkbox is checked */
+  input[type="checkbox"]:checked + #text-to-strike {
+    text-decoration: line-through;
+  }
